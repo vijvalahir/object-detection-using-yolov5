@@ -5,8 +5,9 @@ Build a simple object detection model using pre-trained models, detect and label
 
 ## Requirements 
 1. Download yolov5 form their github repository
-2. Haveing a Nvidia GPU capable of running cuda
-3. A working camera or webcam connected to the computer
+2. having install cv2 and torch on the computer
+3. Haveing a Nvidia GPU capable of running cuda
+4. A working camera or webcam connected to the computer
 
 ## Steps to run the Program
 1. Run the code.py 
