@@ -52,9 +52,8 @@ for detection in result_video:
     img = detection.render()[0]
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     out.write(img)
-
-out.show()
 out.release()
+
 
 
 
