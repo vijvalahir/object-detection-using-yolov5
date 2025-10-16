@@ -46,7 +46,7 @@ for frame in tqdm(frames):
     result_video.append(detections)
 
 h, w, _ = frame.shape
-out = cv2.VideoWriter('camout.mp4',cv2.VideoWriter_fourcc(*'mp4v'),30, (w, h)) 
+out = cv2.VideoWriter('cam.mp4',cv2.VideoWriter_fourcc(*'mp4v'),30, (w, h)) 
 for detection in result_video:
   
     img = detection.render()[0]
@@ -55,6 +55,7 @@ for detection in result_video:
 
 out.show()
 out.release()
+
 
 
 
