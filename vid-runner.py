@@ -22,11 +22,9 @@ while(capo.isOpened()):
     else:
         break
 
-# When everything done, release
-# the video capture object
 capo.release()
 
-# Closes all the frames
 cv2.destroyAllWindows()
+
 
 
