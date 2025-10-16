@@ -1,7 +1,6 @@
 import torch
 import cv2
-import time
-import os
+
 
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
@@ -56,6 +55,7 @@ for detection in result_video:
 
 out.show()
 out.release()
+
 
 
 
