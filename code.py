@@ -9,8 +9,11 @@ print("Enter no of seconds to record from webcam")
 a=input()
 a=int(a)
 a=a*30
+print("Give source of the camera or webcam (Its 0 by default)")
+b=input()
+b=int(b)
 
-cap = cv2.VideoCapture(0)  
+cap = cv2.VideoCapture(b)  
 
 if (cap.isOpened() == False):
     print("Error opening video file")
@@ -19,14 +22,14 @@ frames = []
 i = 0
 while(cap.isOpened()):
 
-    # Captureing webcam frames
+
     ret, frame = cap.read()
     
     if ret == True:
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         frames.append(image)
 
-        if i == a: # no of captured frames
+        if i == a: 
             break
         else:
            i += 1
@@ -53,5 +56,6 @@ for detection in result_video:
 
 out.show()
 out.release()
+
 
 
